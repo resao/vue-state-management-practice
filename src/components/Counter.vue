@@ -10,8 +10,8 @@
     export default {
         methods: {
             ...mapMutations([
-                'increment',
-                'decrement'
+                'asyncIncrement',
+                'asyncDecrement'
             ])
         }
     }
