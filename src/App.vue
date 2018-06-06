@@ -19,6 +19,7 @@
     import Counter from './components/Counter.vue';
     import AnotherCounter from './components/AnotherCounter.vue';
     import Result from './components/Result.vue';
+    import * as types from './store/types';
 
     export default {
         computed: {
@@ -27,7 +28,7 @@
                     return this.$store.getters.value;
                 },
                 set(value) {
-                    this.$store.dispatch('updateValue', value);
+                    this.$store.dispatch(types.UPDATE_VALUE, value);
                 }
             }
         },
